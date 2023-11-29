@@ -1,0 +1,89 @@
+Title: '§a银行服务'
+
+HelpName: '&f介绍'
+HelpLore:
+  - '&a1、您可以选择您想要存取的银行，把游戏币进行存取'
+  - '&a2、不同银行可存取的上限和下限是不一样的，而且利息和触发特殊事件概率也是不一样的'
+  - '&a3、每次存取款都会有冷却时间，毕竟银行接待员还是很忙的'
+
+GoldName: '&a全福银行'
+GoldLore:
+  - '&f这是一家新建的银行'
+  - '&f如果您的钱不多，又想稳稳的过小日子，就选它吧'
+  - ' '
+  - '&6|￥| &7您当前已存款 &7&l[hasMoney]'
+  - '&6|￥| &7一次性最小存款 &7&l[minDepositMoney] &f丨 &7一次性最大存款 &7&l[maxDepositMoney]'
+  - '&6|￥| &7一次性最小取款 &7&l[minWithdrawalMoney] &f丨 &7一次性最大取款 &7&l[maxWithdrawalMoney]'
+  - '&6|￥| &7利息 每&7&l[interestTime]&7分钟增长&7&l[interest]'
+  - '&6|￥| &7存取款冷却 &7&l[operationalCooling]&7分钟'
+  - '&6|￥| &7风险 &a&l基本没有'
+  - ' '
+  - '&6|￥| &7左键 &f&l存款 &f丨 &7右键 &f&l取款'
+
+
+DiamondName: '&c花园银行'
+DiamondLore:
+  - '&f这是市中心最大的银行'
+  - '&f它已经有了半个世纪之长的历史，如果您是一个善于理财，稳重求富，富中求稳的人'
+  - '&f花园银行，是，您最好的选择！'
+  - ' '
+  - '&6|￥| &7您当前已存款 &7&l[hasMoney]'
+  - '&6|￥| &7一次性最小存款 &7&l[minDepositMoney] &f丨 &7一次性最大存款 &7&l[maxDepositMoney]'
+  - '&6|￥| &7一次性最小取款 &7&l[minWithdrawalMoney] &f丨 &7一次性最大取款 &7&l[maxWithdrawalMoney]'
+  - '&6|￥| &7利息 每&7&l[interestTime]&7分钟增长&7&l[interest]'
+  - '&6|￥| &7存取款冷却 &7&l[operationalCooling]&7分钟'
+  - '&6|￥| &7风险 &e&l中规中矩'
+  - ' '
+  - '&6|￥| &7左键 &f&l存款 &f丨 &7右键 &f&l取款'
+
+
+PacificOceanOceanndName: '&6太平洋银行'
+PacificOceanOceanndLore:
+  - '&f这是充满了硝烟的银行'
+  - '&f为什么？因为它所拥有的财富让各大犯罪集团虎视眈眈'
+  - '&f甚至每天都要发生一次抢劫事件，但...谁能挡得住利益的诱惑呢？'
+  - '&f想赚大钱，选这，没错！'
+  - '&f并且最近与FIB一同，加强了银行的防御来保护您的财产安全'
+  - ' '
+  - '&6|￥| &7您当前已存款 &7&l[hasMoney]'
+  - '&6|￥| &7一次性最小存款 &7&l[minDepositMoney] &f丨 &7一次性最大存款 &7&l[maxDepositMoney]'
+  - '&6|￥| &7一次性最小取款 &7&l[minWithdrawalMoney] &f丨 &7一次性最大取款 &7&l[maxWithdrawalMoney]'
+  - '&6|￥| &7利息 每&7&l[interestTime]&7分钟增长&7&l[interest]'
+  - '&6|￥| &7存取款冷却 &7&l[operationalCooling]&7分钟'
+  - '&6|￥| &7风险 &4&l富贵险中求'
+  - ' '
+  - '&6|￥| &7左键 &f&l存款 &f丨 &7右键 &f&l取款'
+
+
+
+Interest: '&7[[name]&7]&a您存款增长了[money]游戏币！'
+
+NoMoney: '&7[[name]&7]&c存款里没有那么多！'
+Coolding: '&7[[name]&7]&c冷却时间结束，还有[time]'
+
+Deposit: '&7[[name]&7]&a请输入需要存款的金额'
+Withdrawal: '&7[[name]&7]&a请输入需要取款的金额'
+
+NoDepositMoney: '&7[[name]&7]&c我们存款的范围是[minDepositMoney]到[maxDepositMoney]呢'
+NoWithdrawalMoney: '&7[[name]&7]&c我们取款的范围是[minWithdrawalMoney]到[maxWithdrawalMoney]呢'
+
+DepositMoney: '&7[[name]&7]&a成功存入[money]游戏币！'
+WithdrawalMoney: '&7[[name]&7]&a成功取出[money]游戏币！'
+
+Blaze: '&7[[name]&7]&c遭受了火灾！'
+PlayerBlaze: '&7[[name]&7]&c因为银行遭受火灾，导致您损失了些游戏币！并且暂时暂停利息结算...'
+
+Flood: '&7[[name]&7]&c遭受了水灾！'
+PlayerFlood: '&7[[name]&7]&c因为银行遭受水灾，导致您损失了些游戏币！并且暂时暂停利息结算...'
+
+Earthquake: '&7[[name]&7]&c遭受了地震！'
+PlayerEarthquake: '&7[[name]&7]&c因为银行遭受地震，导致您损失了些游戏币！并且暂时暂停利息结算...'
+
+Robbery: '&7[[name]&7]&c遭受了抢劫！'
+PlayerRobbery: '&7[[name]&7]&c因为银行被四个歹徒抢劫，导致大量存款丢失...'
+
+FinancialCrisis: '&7[[name]&7]&c开始金融危机，所有银行在劫难逃！'
+PlayerFinancialCrisis: '&7[[name]&7]&c抱歉，金融危机让您损失惨重...'
+
+Collapse: '&7[[name]&7]&c破产，老板跑路了！'
+PlayerCollapse: '&7[[name]&7]&c已破产，导致此银行下所有钱款全部丢失！'

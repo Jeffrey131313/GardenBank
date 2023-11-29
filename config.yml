@@ -1,0 +1,136 @@
+#全福银行
+#默认玩家拥有gb.gold权限
+Gold:
+  #银行名称：
+  Name: '&a全福银行'
+  #存款一次最低/最高...游戏币
+  MinDepositMoney: 100
+  MaxDepositMoney: 10000
+  #取出一次最低/最高...游戏币
+  MinWithdrawalMoney: 100
+  MaxWithdrawalMoney: 10000
+  #每次的利息（基于存入的百分比增长）
+  Interest: 1%
+  #每...分钟触发一次随机事件
+  #最小
+  MinMinute: 240
+  #最大
+  MaxMinute: 480
+  #每...分钟结算一次利息
+  InterestTime: 160
+  #存取款操作CD
+  OperationalCooling: 20
+
+#花园银行
+#默认玩家拥有gb.diamond权限
+Diamond:
+  #银行名称：
+  Name: '&c花园银行'
+  #存款一次最低/最高...游戏币
+  MinDepositMoney: 10000
+  MaxDepositMoney: 100000
+  #取出一次最低/最高...游戏币
+  MinWithdrawalMoney: 10000
+  MaxWithdrawalMoney: 100000
+  #每次的利息（基于存入的百分比增长）
+  Interest: 2%
+  #每...分钟触发一次随机事件
+  #最小
+  MinMinute: 200
+  #最大
+  MaxMinute: 400
+  #每...分钟结算一次利息
+  InterestTime: 160
+  #存取款操作CD
+  OperationalCooling: 40
+
+#太平洋银行
+#默认玩家拥有gb.pacificoceanoceannd权限
+PacificOceanOceannd:
+  #银行名称：
+  Name: '&6太平洋银行'
+  #存款一次最低/最高...游戏币
+  MinDepositMoney: 1000
+  MaxDepositMoney: 1000000
+  #取出一次最低/最高...游戏币
+  MinWithdrawalMoney: 1000
+  MaxWithdrawalMoney: 1000000
+  #每次的利息（基于存入的百分比增长）
+  Interest: 3%
+  #每...分钟触发一次随机事件
+  #最小
+  MinMinute: 30
+  #最大
+  MaxMinute: 120
+  #每...分钟结算一次利息
+  InterestTime: 80
+  #存取款操作CD
+  OperationalCooling: 60
+
+#事件列表与发生概率
+#如果不想要某些事件，可以在这删除
+Event:
+  '火灾': 3%
+  '水灾': 3%
+  '地震': 3%
+  '抢劫': 2%
+  '金融危机': 0.1%
+  '破产': 0.1%
+
+#事件配置
+EventInfo:
+  #火灾/水灾/地震会减少此银行所有玩家的存款
+  #并让银行停止几次利息结算
+  '火灾':
+    #丢失的游戏币（最大最小）
+    MinLostMoney: 100
+    MaxLostMoney: 1000
+    #丢失的游戏币百分比
+    LostMoneyPercentage: 10%
+    #银行停止利息...次
+    StopInterest: 3
+  '水灾':
+    #丢失的游戏币（最大最小）
+    MinLostMoney: 200
+    MaxLostMoney: 800
+    #丢失的游戏币百分比
+    LostMoneyPercentage: 10%
+    #银行停止利息...次
+    StopInterest: 3
+  '地震':
+    #丢失的游戏币（最大最小）
+    MinLostMoney: 100
+    MaxLostMoney: 500
+    #丢失的游戏币百分比
+    LostMoneyPercentage: 15%
+    #银行停止利息...次
+    StopInterest: 5
+  #抢劫会丢失巨额的钞票，
+  #这些钞票的...会一去不复返
+  '抢劫':
+    #丢失的游戏币（最大最小）
+    MinLostMoney: 1000
+    MaxLostMoney: 10000
+    #丢失的游戏币百分比
+    LostMoneyPercentage: 0%
+    #银行停止利息...次
+    StopInterest: 0
+  #金融危机会导致所有银行都丢失巨额的游戏币
+  '金融危机':
+    #丢失的游戏币（最大最小）
+    MinLostMoney: 0
+    MaxLostMoney: 0
+    #丢失的游戏币百分比
+    LostMoneyPercentage: 80%
+    #银行停止利息...次
+    StopInterest: 10
+  #破产代表这个银行，在短期内已经是死的了
+  #因为老板已经跑路，需要新鲜老板代替
+  '破产':
+    #丢失的游戏币（最大最小）
+    MinLostMoney: 0
+    MaxLostMoney: 0
+    #丢失的游戏币百分比
+    LostMoneyPercentage: 100%
+    #银行停止利息...次
+    StopInterest: 20
